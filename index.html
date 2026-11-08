@@ -1,313 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - TANYELW</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="nav-item">PERSONAL</div>
-         <!--<div class="nav-item social">𝕏</div> -->
-            <div class="nav-item social">◉</div>
-            <div class="nav-item info">INFO</div>
-            <div class="nav-item projects">PROJECTS</div>
-            <div class="nav-item blog">NEWS</div>
-            <div class="nav-item theme-toggle" id="langToggle" title="Switch language">EN</div>
-            <div class="nav-item theme-toggle" id="themeToggle" title="Toggle dark mode">◐</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060708" />
+    <meta name="description" content="Explore games, web projects and AI tools by TANYELW." />
+    <title>TANYELW</title>
+    <script>
+      // FULL MOTION override: must run before first paint so the reduced-motion
+      // CSS fallback never flashes on.
+      if (localStorage.getItem('forceMotion') === '1') document.documentElement.setAttribute('data-force-motion', '');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-BiRm1qjC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D4y35DJ5.css">
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-label="Loading experience">
+      <div class="loader-top"><span>TANYELW OS / WORLD BUILDER</span><span>PORTFOLIO 2026</span></div>
+      <div class="loader-crt" aria-hidden="true">
+        <div class="loader-window">
+          <div class="loader-screen">
+            <div class="loader-signal"></div>
+            <div class="loader-copy">
+              <span>TANYELW OPERATING SYSTEM</span>
+              <strong>TANYELW</strong>
+              <span>WORLDBUILDER UNIT</span>
+              <span>LOADING REALITY <b id="loader-count">000</b>%</span>
+            </div>
+            <div class="loader-track"><span id="loader-bar"></span></div>
+          </div>
+          <div class="loader-bezel">TW—01 / PERSONAL REALITY ENGINE</div>
         </div>
-    </nav>
+      </div>
+      <div class="loader-bottom"><span>GAMES / WEB / AI</span><span>PROJECT ARCHIVE</span></div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div id="retrobg">
-            <div id="retrobg-sky">
-                <div id="retrobg-stars">
-                    <div class="retrobg-star" style="left:  5%; top: 55%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left:  7%; top:  5%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 10%; top: 45%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 12%; top: 35%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 15%; top: 39%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 20%; top: 10%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 35%; top: 50%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 40%; top: 16%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 43%; top: 28%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 45%; top: 30%; transform: scale( 3 );"></div>
-                    <div class="retrobg-star" style="left: 55%; top: 18%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 60%; top: 23%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 62%; top: 44%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 67%; top: 27%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 75%; top: 10%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 80%; top: 25%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 83%; top: 57%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 90%; top: 29%; transform: scale( 2 );"></div>
-                    <div class="retrobg-star" style="left: 95%; top:  5%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 96%; top: 72%; transform: scale( 1 );"></div>
-                    <div class="retrobg-star" style="left: 98%; top: 70%; transform: scale( 3 );"></div>
-                </div>
-                <div id="retrobg-sunWrap">
-                    <div id="retrobg-sun"></div>
-                </div>
-                <div id="retrobg-mountains">
-                    <div id="retrobg-mountains-left" class="retrobg-mountain"></div>
-                    <div id="retrobg-mountains-right" class="retrobg-mountain"></div>
-                </div>
-                <div id="retrobg-cityWrap">
-                    <div id="retrobg-city">
-                        <div style="left:  4.0%; height: 20%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left:  6.0%; height: 50%; width: 1.5%;" class="retrobg-building"></div>
-                        <div style="left:  8.0%; height: 25%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 12.0%; height: 30%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 13.0%; height: 55%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 17.0%; height: 20%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 18.5%; height: 70%; width: 1.5%;" class="retrobg-building"></div>
-                        <div style="left: 20.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 21.5%; height: 80%; width: 2.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 25.0%; height: 60%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 28.0%; height: 40%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 30.0%; height: 70%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 35.0%; height: 65%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 38.0%; height: 40%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 42.0%; height: 60%; width: 2.0%;" class="retrobg-building"></div>
-                        <div style="left: 43.0%; height: 85%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 45.0%; height: 40%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 48.0%; height: 25%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 50.0%; height: 80%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 52.0%; height: 32%; width: 5.0%;" class="retrobg-building"></div>
-                        <div style="left: 55.0%; height: 55%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 58.0%; height: 45%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 61.0%; height: 90%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 66.0%; height: 99%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 69.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 73.5%; height: 90%; width: 2.0%;" class="retrobg-building"></div>
-                        <div style="left: 72.0%; height: 70%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 75.0%; height: 60%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 80.0%; height: 40%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 83.0%; height: 70%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 87.0%; height: 60%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
-                        <div style="left: 93.0%; height: 50%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 91.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
-                        <div style="left: 94.0%; height: 20%; width: 3.0%;" class="retrobg-building"></div>
-                        <div style="left: 98.0%; height: 35%; width: 2.0%;" class="retrobg-building"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="retrobg-ground">
-                <div id="retrobg-linesWrap">
-                    <div id="retrobg-lines">
-                        <div id="retrobg-vlines">
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                            <div class="retrobg-vline"></div>
-                        </div>
-                        <div id="retrobg-hlines">
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                            <div class="retrobg-hline"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="retrobg-groundShadow"></div>
-            </div>
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="contact-exit-screen" id="contact-exit-screen" aria-hidden="true"><div>EXITING SYSTEM</div></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#home" aria-label="TANYELW, back to home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2 30 26H2L16 2Z" stroke="currentColor" stroke-width="1.5"/><path d="m16 10 8 14H8l8-14Z" fill="currentColor"/></svg>
+        <span>TANYELW</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work" data-nav="work"><span>01</span> Work</a>
+        <a href="#skills" data-nav="skills"><span>02</span> Skills</a>
+        <a href="#about" data-nav="about"><span>03</span> About</a>
+      </nav>
+      <div class="header-actions">
+        <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false" aria-label="Play the full-motion experience">MOTION: <span class="motion-state">REDUCED</span></button>
+        <a href="#contact" class="contact-pill magnetic" data-contact-link>Contact</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+      <nav aria-label="Mobile navigation">
+        <a href="#home"><span>00</span>Index</a>
+        <a href="#work"><span>01</span>Work</a>
+        <a href="#skills"><span>02</span>Skills</a>
+        <a href="#about"><span>03</span>About</a>
+        <a href="#contact" data-contact-link><span>04</span>Contact</a>
+      </nav>
+      <div class="mobile-menu-foot"><span>TANYELW OS</span><span>PORTFOLIO</span></div>
+    </div>
+
+    <aside class="side-rail" aria-label="Page progress">
+      <span id="section-number">00</span>
+      <div class="rail-track"><span id="rail-progress"></span></div>
+      <span>03</span>
+    </aside>
+
+    <main>
+      <section class="panel hero" id="home" data-section="0">
+        <div class="hero-meta">TANYELW <span>/</span> PROJECT ARCHIVE</div>
+        <h1 class="hero-title">
+          <span class="title-line"><span>TANYELW</span></span>
+          <span class="title-line"><span><em>Games, web &amp; AI.</em></span></span>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p>A collection of things I’ve built, from a horror game to a website for a karaoke business.</p>
+          <div class="hero-coordinates">
+            <a class="scroll-cue" href="#work">SCROLL TO ENTER</a>
+            <span aria-hidden="true">/</span><span>01–05</span>
+          </div>
         </div>
+      </section>
 
-        <div class="hero-content">
-            <h1 class="hero-title">
-                I'M AN GRADUATED EXPERT IT, INDIE GAME DEVELOPER, WEB DESIGNER AND AI RESEARCHER.
-            </h1>
-            <p class="hero-subtitle">
-               <!-- . -->
-            </p>
-        </div>
-        <div class="scroll-indicator"></div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card project-with-image" data-url="https://mrtea43.github.io/MGPT/" style="background-image: url('mgpt-thumbnail.png');">
-                <div class="project-overlay"></div>
-                <div class="project-content">
-                    <h3 class="project-title">MGPT</h3>
-                    <p class="project-description">Modern AI Chat Interface</p>
-                    <p class="project-tech">AI-Powered Chat Interface</p>
-                    <a href="https://mrtea43.github.io/MGPT/" target="_blank" rel="noopener noreferrer" class="project-link">VIEW LIVE DEMO →</a>
+      <section class="panel journey" id="work" data-section="1" aria-label="Selected work and skills">
+        <div class="journey-sticky">
+          <div class="portal-frame" id="portal-frame">
+            <div class="portal-window" id="portal-window">
+              <div class="portal-content" id="portal-content">
+                <div class="portal-stage stage-projects">
+                  <div class="portal-heading">
+                    <span>01 / INSIDE THE MACHINE</span>
+                    <h2>Selected <em>work</em></h2>
+                    <p>Business work and personal projects, from games to tools for the web.</p>
+                  </div>
+                  <div class="portal-track">
+                    <article class="portal-project">
+                      <div class="project-media"><img src="/projects/encore-preview.webp" alt="Encore Entertainment karaoke rental website preview" /></div>
+                      <div class="project-info"><span>01 / BUSINESS WEBSITE</span><h3>Encore Entertainment</h3><p>A website for a karaoke rental business I’m part of.</p><button class="project-case" data-case="0">OPEN CASE ↗</button></div>
+                    </article>
+                    <article class="portal-project">
+                      <div class="project-media"><img src="/projects/hangman.webp" alt="The Hangman Is Coming game artwork" /></div>
+                      <div class="project-info"><span>02 / INDEPENDENT GAME</span><h3>The Hangman Is Coming</h3><p>A first-person survival horror game where the creature listens for you.</p><button class="project-case" data-case="1">OPEN CASE ↗</button></div>
+                    </article>
+                    <article class="portal-project">
+                      <div class="project-media"><img src="/projects/mgpt-v2.jpg" alt="MGPT-V2 welcome screen with a chat prompt and provider selector" /></div>
+                      <div class="project-info"><span>03 / INDEPENDENT AI INTERFACE</span><h3>MGPT-V2</h3><p>A browser chat client with saved provider profiles and side-by-side model comparisons.</p><button class="project-case" data-case="2">OPEN CASE ↗</button></div>
+                    </article>
+                    <article class="portal-project">
+                      <div class="project-media"><img src="/projects/mmusic.webp" alt="Mmusic web music player preview" /></div>
+                      <div class="project-info"><span>04 / INDEPENDENT MUSIC PLAYER</span><h3>Mmusic</h3><p>A web music platform built around an HTML5 audio player.</p><button class="project-case" data-case="3">OPEN CASE ↗</button></div>
+                    </article>
+                    <article class="portal-project">
+                      <div class="project-media"><img src="/projects/hangman-mobile.jpg" alt="Official Hangman website with the hooded character and Chapter I demo" /></div>
+                      <div class="project-info"><span>05 / INDEPENDENT MOBILE GAME</span><h3>The Hangman Is Coming (Mobile)</h3><p>A horror roleplaying game set in Blackhollow Manor.</p><button class="project-case" data-case="4">OPEN CASE ↗</button></div>
+                    </article>
+                  </div>
                 </div>
-            </div>
-            <div class="project-card project-with-image" data-url="https://mrtea43.github.io/Mmusic/#player" style="background-image: url('MMusic.png');">
-                <div class="project-overlay"></div>
-                <div class="project-content">
-                    <h3 class="project-title">Mmusic</h3>
-                    <p class="project-description">Digital Music Evolution</p>
-                    <p class="project-tech">HTML5 Audio Player | Web Music Platform</p>
-                    <a href="https://mrtea43.github.io/Mmusic/#player" target="_blank" rel="noopener noreferrer" class="project-link">VIEW LIVE DEMO →</a>
+
+                <div class="portal-stage stage-skills" id="skills">
+                  <div class="portal-heading">
+                    <span>02 / CAPABILITY STACK</span>
+                    <h2>Skills behind <em>the signal</em></h2>
+                    <p>The tools I use to build projects and solve technical problems.</p>
+                  </div>
+                  <div class="skills-grid">
+                    <div class="skill-block"><span>01</span><h3>Web Development</h3><p>HTML, CSS and JavaScript for websites and browser apps.</p><div class="skill-meter"><i style="--level:94%"></i></div></div>
+                    <div class="skill-block"><span>02</span><h3>Game Development</h3><p>Godot 4, GDScript and Blender for game logic, environments and assets.</p><div class="skill-meter"><i style="--level:90%"></i></div></div>
+                    <div class="skill-block"><span>03</span><h3>AI Interfaces</h3><p>Browser chat interfaces with configurable API endpoints and models.</p><div class="skill-meter"><i style="--level:86%"></i></div></div>
+                    <div class="skill-block"><span>04</span><h3>IT Operations</h3><p>Endpoint deployment, device management and production troubleshooting.</p><div class="skill-meter"><i style="--level:82%"></i></div></div>
+                  </div>
                 </div>
+              </div>
+              <div class="portal-scan" aria-hidden="true"></div>
+              <div class="portal-hud"><span>TANYELW OS / WORLD VIEWER</span><span id="portal-readout">PROJECT 01</span></div>
             </div>
-            <div class="project-card project-with-image" data-url="https://tanyelw.itch.io/the-hangman-is-coming" style="background-image: url('hangman-cover.png');">
-                <div class="project-overlay"></div>
-                <div class="project-content">
-                    <h3 class="project-title">The Hangman Is Coming</h3>
-                    <p class="project-description">You wake up somewhere you should not be. The lights are out. Something is already looking for you.</p>
-                    <p class="project-tech">Godot 4 | GDScript | Blender</p>
-                    <a href="https://tanyelw.itch.io/the-hangman-is-coming" target="_blank" rel="noopener noreferrer" class="project-link">PLAY GAME →</a>
-                </div>
-            </div>
+            <div class="portal-bezel" aria-hidden="true"><span>TW—01 / PERSONAL REALITY ENGINE</span><span>SCANLINE 60HZ</span></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Blog Section -->
-    <section class="blog-section">
-        <h2 class="section-title">NEWS</h2>
-        <div class="blog-grid">
-            <!-- Blog posts will be dynamically loaded from RSS feeds -->
+      <section class="panel about" id="about" data-section="2">
+        <div class="section-kicker reveal"><span>03 / THE HUMAN SIGNAL</span><span>TANYELW</span></div>
+        <div class="about-statement">
+          <p class="reveal">I LIVE SOMEWHERE BETWEEN A BEAUTIFUL IDEA<br />AND <em>“WHAT IF WE ACTUALLY BUILT IT?”</em></p>
         </div>
-    </section>
-
-    <!-- Additional Details -->
-    <section class="details-section">
-        <div class="details-content">
-            <div class="details-column">
-                <h3>SKILLS</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Provided on-site and remote technical support, troubleshooting hardware/software issues, system configurations, and end-user training">IT Support On-site/Remote</li>
-                    <li class="has-tooltip" data-tooltip="Managed IT projects from planning to execution, coordinating teams, resources, and timelines to deliver solutions on schedule">Project Management</li>
-                    <li class="has-tooltip" data-tooltip="Developed automation scripts and tools using Python, and PowerShell to streamline IT operations and improve efficiency">Scripting (Python, Bash, PowerShell)</li>
-                    <li class="has-tooltip" data-tooltip="Created user-centered designs and interfaces, focusing on usability, accessibility, and visual appeal">UI/UX Design</li>
-                    <li class="has-tooltip" data-tooltip="Developed indie games using Godot Engine, including 2D/3D game mechanics, GDScript programming, and scene management">Godot Game Engine</li>
-                    <li class="has-tooltip" data-tooltip="Built responsive websites and web applications using HTML, CSS, JavaScript, and modern frameworks">Web Development</li>
-                    <li class="has-tooltip" data-tooltip="Configured routers, switches, firewalls, VLANs, and network protocols for optimal performance and security">Network Configuration</li>
-                    <li class="has-tooltip" data-tooltip="Managed Windows and Linux servers, user accounts, permissions, backups, and system monitoring">System Administration</li>
-                    <li class="has-tooltip" data-tooltip="I fix things before they break">Problem Solving</li>
-                    <li class="has-tooltip" data-tooltip="Holder of a Dutch driving license with four years of driving experience.">Driving car</li>
-                    <li class="has-tooltip" data-tooltip="English/Dutch[Fluent],Romanian[Basic],
-                    Turkish[Native],Japanese[Learning]">Languages i can speak</li>
-                </ul>
-            </div>
-            <div class="details-column">
-                <h3>EXPERIENCE</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Provided comprehensive IT support including troubleshooting, network configuration, system maintenance, and user assistance across various enterprise environments">5+ Years in IT Support/Networking Field</li>
-                    <li class="has-tooltip" data-tooltip="Worked with diverse organizations ranging from startups to enterprise companies, adapting to different IT infrastructures and business requirements">4+ Companies i worked with</li>
-                    <li class="has-tooltip" data-tooltip="Implemented security protocols, conducted vulnerability assessments, and maintained secure network infrastructure">Experience with Cybersecurity</li>
-                    <li class="has-tooltip" data-tooltip="Managed Windows and Linux servers, including installation, configuration, maintenance, and performance optimization">Experience with Servers</li>
-                    <li class="has-tooltip" data-tooltip="Deployed and managed cloud resources on AWS, Azure, and Google Cloud platforms">Experience with Cloud Infrastructure</li>
-                    <li class="has-tooltip" data-tooltip="Provided technical support to users across different countries and time zones, ensuring seamless operations">Supporting International End-users</li>
-                    <li class="has-tooltip" data-tooltip="Diagnosed and repaired hardware issues, performed component replacements, and conducted system upgrades">Laptop & Hardware Repair</li>
-                    <li class="has-tooltip" data-tooltip="Advised clients on technology solutions, infrastructure improvements, and IT strategy">IT Consultation Services</li>
-                </ul>
-            </div>
-            <div class="details-column">
-                <h3>EDUCATION</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Graduated from Techniek College Rotterdam after three years of combining work and study">Expert IT Graduate</li>
-                    <li class="has-tooltip" data-tooltip="My studies focused on becoming an Expert IT, covering a wide range of topics including software engineering, hardware architecture, cybersecurity, and IT infrastructure.">Information Technology</li>
-                    <li class="has-tooltip" data-tooltip="I also hold a degree in Network Administration, gaining hands-on experience in network design, implementation, and cybersecurity, with a focus on threat prevention and mitigation.">Networking & Security</li>
-                    <li class="has-tooltip" data-tooltip="Learned programming languages, software design patterns, version control. ">Software Development</li>
-                    <li class="has-tooltip" data-tooltip="Trained in SQL, NoSQL databases, data modeling, query optimization, and database administration">Database Management</li>
-                    <li class="has-tooltip" data-tooltip="Studied cloud architecture, virtualization, containerization, and cloud service platforms like AWS, Azure">Cloud Computing</li>
-                    <li class="has-tooltip" data-tooltip="Actively pursuing ongoing education through online courses, workshops, certifications, and technology conferences">Continuous Professional Development</li> 
-                </ul>
-            </div>
-            <div class="details-column">
-                <h3>LANGUAGES & TOOLS</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Daily Windows user with a “do everything with Command Prompt, PowerShell, or Bash” mentality.">Windows + Linux/macOS</li>
-                    <li class="has-tooltip" data-tooltip="Experienced with Python for automation, JavaScript for web projects, and GDScript for creating games in Godot as a hobbyist developer.">Python, JavaScript, GDScript</li>
-                    <li class="has-tooltip" data-tooltip="Expert in HTML5 semantic markup and CSS3 including Flexbox, Grid, animations, and responsive design techniques">HTML/CSS</li>
-                    <li class="has-tooltip" data-tooltip="Experience with MySQL, PostgreSQL, MongoDB, and Redis for data storage, retrieval, and management">SQL & NoSQL Databases</li>
-                    <li class="has-tooltip" data-tooltip="Skilled in Git workflows, branching strategies, merge conflict resolution, and collaborative development using GitHub/GitLab">Git Version Control</li>
-                    <li class="has-tooltip" data-tooltip="Skilled in Docker-based containerization, particularly for building and optimizing LLM environments.">Docker</li>
-                    <li class="has-tooltip" data-tooltip="Experience in administering Ubuntu, Windows Server 2016/2019/2022, and Active Directory">Linux & Windows Server</li>
-                    <li class="has-tooltip" data-tooltip="Configured and managed virtual machines using VMware/VirtualBox">VMware & VirtualBox</li>
-                    <li class="has-tooltip" data-tooltip="Deployed and managed cloud services including EC2, Azure VMs">AWS, Azure</li>
-                </ul>
-            </div>
-            <div class="details-column">
-                <h3>CERTIFICATIONS</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Is not valid anymore :( )">CCENT</li>
-                    <li class="has-tooltip" data-tooltip="Completed a one-year Cybersecurity and Forensics program focused on security tools, CTFs, and cryptography.">Cyberworkplace CSI-010</li>
-                    <li class="has-tooltip" data-tooltip="I am currently working toward this certificate and expect to complete it this year.">ITIL Foundation</li>
-                    <li class="has-tooltip" data-tooltip="Completed various professional development courses in emerging technologies, leadership, and specialized IT domains">Professional Development Courses</li>
-                </ul>
-            </div>
-            <div class="details-column">
-                <h3>INTERESTS</h3>
-                <ul>
-                    <li class="has-tooltip" data-tooltip="Creating independent video games from concept to release, focusing on unique gameplay mechanics, storytelling, and player experience">Indie Game Development</li>
-                    <li class="has-tooltip" data-tooltip="Exploring artificial intelligence, neural networks, deep learning algorithms, and their practical applications in solving real-world problems">AI & Machine Learning Research</li>
-                    <li class="has-tooltip" data-tooltip="Studying emerging security threats, vulnerabilities, exploit techniques, and defensive strategies to stay ahead of cyber threats">Cybersecurity Research</li>
-                    <li class="has-tooltip" data-tooltip="Contributing code, documentation, and bug fixes to open source projects">Open Source Contribution</li>
-                    <li class="has-tooltip" data-tooltip="Staying current with emerging technologies, exploring new frameworks, tools, and methodologies to solve technical challenges">Technology Innovation</li>
-                    <li class="has-tooltip" data-tooltip="Passionate about creating intuitive, accessible, and visually appealing digital experiences that prioritize user needs">Web Design & UX</li>
-                </ul>
-            </div>
+        <div class="about-grid">
+          <div class="about-bio reveal"><span class="mini-label">A SHORT INTRODUCTION</span><p>I’m TANYELW. I build games, websites and browser tools, and I work with devices and systems in production environments.</p><p>My projects include a survival horror game that listens for footsteps, an AI chat interface and a web music player.</p></div>
+          <div class="about-services reveal"><span class="mini-label">WHAT I DO</span><ul><li><span>01</span>Web Development</li><li><span>02</span>Game Development</li><li><span>03</span>AI Interfaces</li><li><span>04</span>IT Operations</li></ul></div>
+          <div class="about-stats reveal"><div><strong>5+</strong><span>YEARS IN IT</span></div><div><strong>4+</strong><span>COMPANIES SERVED</span></div><div><strong>05</strong><span>FEATURED PROJECTS</span></div></div>
         </div>
-    </section>
+        <div class="marquee" aria-hidden="true"><div>DESIGN IS A FEELING <span>✳</span> CODE IS THE MEDIUM <span>✳</span> CURIOSITY IS THE ENGINE <span>✳</span> DESIGN IS A FEELING <span>✳</span> CODE IS THE MEDIUM <span>✳</span> CURIOSITY IS THE ENGINE <span>✳</span></div></div>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 TANYELW. All rights reserved.</p>
-    </footer>
+      <section class="panel contact" id="contact" data-section="3">
+        <div class="section-kicker reveal"><span>04 / START A CONVERSATION</span><span>FIND ME ONLINE</span></div>
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <p class="contact-intro">HAVE A PROJECT IN MIND?<br />FIND MY WORK ONLINE.</p>
+            <h2><span>LET’S</span><br /><em>connect.</em></h2>
+          </div>
+          <form class="contact-form reveal" id="contact-form" aria-describedby="contact-status">
+            <label>YOUR NAME<input name="name" type="text" autocomplete="name" disabled placeholder="YOUR NAME" /></label>
+            <label>EMAIL ADDRESS<input name="email" type="email" autocomplete="email" disabled placeholder="HELLO@EXAMPLE.COM" /></label>
+            <label>TELL ME EVERYTHING<textarea name="message" rows="6" disabled placeholder="I WANT TO BUILD SOMETHING IMPOSSIBLE…"></textarea></label>
+            <button type="submit" disabled>EMAIL UNAVAILABLE</button>
+            <p id="contact-status">Find me on <a href="https://github.com/Mrtea43" target="_blank" rel="noreferrer">GitHub</a> or <a href="https://tanyelw.itch.io/" target="_blank" rel="noreferrer">itch.io</a>.</p>
+          </form>
+        </div>
+        <footer class="site-footer">
+          <div><span class="status-dot"></span> TANYELW / PORTFOLIO</div>
+          <div class="footer-links"><a href="https://github.com/Mrtea43" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://tanyelw.itch.io/" target="_blank" rel="noreferrer">ITCH.IO ↗</a></div>
+          <div><span>© TANYELW 2026</span><a href="#home">BACK TO TOP ↑</a></div>
+        </footer>
+      </section>
+    </main>
 
-    <script src="script.js"></script>
-</body>
+    <div class="cursor" id="cursor" aria-hidden="true"><span id="cursor-label"></span></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="case-modal" id="case-modal">
+      <button class="modal-close" id="case-close" aria-label="Close case study">CLOSE <span>×</span></button>
+      <div class="modal-scroll">
+        <div class="modal-hero"><img id="modal-image" alt="" /><div class="modal-hero-overlay"><span id="modal-number">CASE 01 / 05</span><h2 id="modal-title"></h2></div></div>
+        <div class="modal-content"><div class="modal-lead"><span class="mini-label">THE CHALLENGE</span><p id="modal-lead"></p></div><div class="modal-details"><div><span class="mini-label">MY ROLE</span><p id="modal-role"></p></div><div><span class="mini-label">THE OUTCOME</span><p id="modal-outcome"></p></div></div><a class="project-case modal-link" id="modal-link" target="_blank" rel="noopener noreferrer" hidden></a><button class="modal-next" id="modal-next">NEXT PROJECT <span>→</span></button></div>
+      </div>
+    </dialog>
+
+  </body>
 </html>
